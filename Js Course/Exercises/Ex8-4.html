@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <!-- for creating a textbox -->
+        <input type="text" id="text-box"></input>
+        <!-- A button(interesting) -->
+        <button onclick="displaytext()">Enter Text</button>
+        <script>
+            // O.O (I didnt understand too)(It's a joke)(or ?)
+            function displaytext(){
+                let textbox = document.getElementById('text-box');
+                let title =textbox.value;
+
+                let div = document.createElement('div');
+                div.innerText = title;
+                document.body.appendChild(div);
+            }
+        </script>
+    </body>
+</html>

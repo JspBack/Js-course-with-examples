@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <!-- we need to create a div for counter-->
+        <div id="counter">0</div>
+        <!-- we need a button for increase the number of counter var(also we need a function)-->
+        <button id="counter" onclick="counterplus()">Add</button>
+        <script>
+           let count = 0;
+           //here's our function
+           function counterplus() {
+           count = count + 1;
+           let counter = document.getElementById('counter');
+           counter.innerText = count;
+           }
+        </script>
+    </body>
+</html>

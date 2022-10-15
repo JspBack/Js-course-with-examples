@@ -1,0 +1,30 @@
+<!-- Its time to do shopping yaaaaay-->
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <!-- Cool stuff: ids and onlick function-->
+        <div id="shopping-cart">Our shopping cart(I love stickers):</div>
+        <button id="stuff1" onclick="addstuff('Apple')">Apple</button>
+        <button id="stuff2" onclick="addstuff('lemon')">Lemon</button>
+        <button id="stuff3" onclick="addstuff('cool 1998 dodge charger rt stickers')">cool 1998 dodge charger rt stickers</button>
+        <button id="remover" onclick="deleterminator()">remove(Dont press if u have stickers on ur basket pls.)</button>
+
+        <script>
+            //with this const we can easily use our big div like a shopping cart
+            //otherwise we would need to tons of mini divs like plastic bags(u know they are harmful for nature :/)
+            const shoppingcart = document.getElementById('shopping-cart');
+            //Adding function
+            function addstuff(stuff){
+                const cartItem = document.createElement('div');
+                cartItem.innerText = stuff;
+                shoppingcart.appendChild(cartItem);
+            }
+            //Clears our Basket[Here is the evil part >:(] )
+            function deleterminator(){
+                shoppingcart.innerHTML = '' +'Our shopping cart(I love stickers):';
+                console.log('NOOOOOOOOOOOO')
+            }
+        </script>
+    </body>
+</html>

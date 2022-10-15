@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <!-- we created a button and we gave an id and onclick function(so we can find them easily)-->
+        <button id="to-do-button" onclick="changeToDone()">To do</button>
+        <script>
+            //a function that when you click on it, our string transforms into a new string wow 
+            function changeToDone() {
+            let button = document.getElementById('to-do-button');
+            button.innerText = 'Done';
+        }
+        </script>
+    </body>
+</html>

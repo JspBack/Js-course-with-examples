@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <!-- we need to create a div for counter-->
+        <div id="counter">10</div>
+        <!-- we need a button for decrease the number of counter var(also we need a function)-->
+        <button id="counter" onclick="counterminus()">Remove</button>
+        <script>
+           let count = 10;
+           //here's our function
+           function counterminus() {
+           count = count - 1;
+           let counter = document.getElementById('counter');
+           counter.innerText = count;
+           }
+        </script>
+    </body>
+</html>

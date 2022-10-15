@@ -1,0 +1,43 @@
+<!-- It took 1 and half hour-->
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <!-- I just wanted to add placeholder :P-->
+        <!-- U can write text in textbox without distrupting user's input with placeholder-->
+        <!-- Like a searchbar-->
+        <input id="textbox" placeholder="Enter a nombir"/>
+        <button onclick="inchtocm()">Convert to cm</button>
+        <button onclick="cmtoinch()">Convert to inch</button>
+        <button onclick="deleterminator()">Clear</button>
+        <!-- Im adding results div because it looks good :D -->
+        <div id='results'>Results:</div>
+        <script>
+            //important vars (plastic bag thing)
+            const textbox = document.getElementById('textbox');
+            const results =document.getElementById('results');
+
+        function inchtocm() {
+        const value = textbox.value;
+        //This part is really interesting u can't use math on strings
+        //so u need to convert them to integers 
+        //with '+' this unpredictable impressive symbol :/ 
+        const nextvalue = +value * 2.54;
+        const result = document.createElement('div');
+        result.innerText = nextvalue;
+        results.appendChild(result);
+        }
+
+        function cmtoinch() {
+        const value = textbox.value;
+        const nextvalue = +value / 2.54;
+        const result = document.createElement('div');
+        result.innerText = nextvalue;
+        results.appendChild(result);
+        }
+        function deleterminator(){
+        results.innerHTML = '' +'Results:'
+        }
+        </script>
+    </body>
+</html>

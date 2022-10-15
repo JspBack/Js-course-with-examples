@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            //The duality of loops in Js :([ I HATE LOOPS!!!]
+            function totalbill(cartArray) {
+            let total = 0;
+            //foreach command = loop with arrays(i guess)
+            //[https://www.freecodecamp.org/news/javascript-foreach-how-to-loop-through-an-array-in-js/ u can check here]
+            //Its safe!
+            cartArray.forEach(function (stuff) {
+                total = total + stuff.price * stuff.quantity;
+            });
+            console.log(total);
+            }
+            totalbill([
+            { name: 'chad nissan gtr34 hks turbo muffler exhaust', price: 10000, quantity: 1 },
+            { name: 'cringe bmw 3.0L turbodiesel DOHC I-6 motor ', price: 1, quantity: 1 },
+            {name: '1L oil', price:10000000, quantity: 0.1}
+            //no offense 
+            ]);
+        </script>
+    </body>
+</html>
